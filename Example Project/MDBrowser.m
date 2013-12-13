@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        browser = [[UIWebView alloc] initWithFrame:CGRectMake(0,0, frame.size.width-20, frame.size.height-50)];
+        browser = [[UIWebView alloc] initWithFrame:CGRectMake(0,0, frame.size.width-20, frame.size.height-80)];
         
         self.clipsToBounds = NO;
         ContainerView = [[UIView alloc] initWithFrame:CGRectMake(10,5, frame.size.width-20, frame.size.height-5)];
@@ -38,7 +38,7 @@
         ContainerView.layer.borderWidth = 5;
         [ContainerView addSubview:browser];
         
-        buttonsView = [[UIView alloc] initWithFrame:CGRectMake(0, browser.frame.size.height, frame.size.width, 50)];
+        buttonsView = [[UIView alloc] initWithFrame:CGRectMake(0, ContainerView.frame.size.height-50, ContainerView.frame.size.width, 50)];
         buttonsView.backgroundColor = [UIColor colorWithRed:(241.0f/255.0f) green:(241.0f/255.0f) blue:(241.0f/255.0f) alpha:1.0];
         [ContainerView addSubview:buttonsView];
         
@@ -80,7 +80,7 @@
         browser.frame = CGRectMake(0, 0, self.frame.size.width-20, self.frame.size.height-20);
     }else
     {
-        browser.frame = CGRectMake(0,0, self.frame.size.width-20, self.frame.size.height-50);
+        browser.frame = CGRectMake(0,0, self.frame.size.width-20, self.frame.size.height-80);
     }
 }
 - (void)ForwardAction:(id)sender

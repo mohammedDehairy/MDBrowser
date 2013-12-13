@@ -28,7 +28,7 @@
 -(void)showBrowserAction:(id)sender
 {
     if(!browser)
-        browser = [[MDBrowser alloc] initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, 300)];
+        browser = [[MDBrowser alloc] initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height-50)];
     [browser ShowInView:self.view];
     [browser LoadUrl:[NSURL URLWithString:@"http://www.google.com"]];
     [browser setButtonsHidden:switch1.on];
