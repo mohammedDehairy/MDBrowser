@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8B951C0B-289C-435B-B04F-41D423B737CF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MDBrowser</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8559078A-289D-4C26-873E-F2E5D2805959</key>
+		<string>https://github.com/mohammedDehairy/MDBrowser.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example Project/MDBrowser.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8559078A-289D-4C26-873E-F2E5D2805959</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mohammedDehairy/MDBrowser.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8559078A-289D-4C26-873E-F2E5D2805959</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8559078A-289D-4C26-873E-F2E5D2805959</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MDBrowser</string>
+		</dict>
+	</array>
+</dict>
+</plist>
