@@ -77,7 +77,7 @@
     buttonsView.hidden = hidden;
     if(hidden)
     {
-        browser.frame = CGRectMake(0, 0, self.frame.size.width-20, self.frame.size.height-20);
+        browser.frame = CGRectMake(0, 0, self.frame.size.width-20, self.frame.size.height-30);
     }else
     {
         browser.frame = CGRectMake(0,0, self.frame.size.width-20, self.frame.size.height-80);
