@@ -161,7 +161,7 @@
 		6EE1FD13185B9F5C00E29F40 = {
 			isa = PBXGroup;
 			children = (
-				6EE1FD5A185B9F8200E29F40 /* MDBrowser */,
+				6EE1FD5A185B9F8200E29F40 /* Classes */,
 				6EE1FD25185B9F5C00E29F40 /* MDBrowser */,
 				6EE1FD47185B9F5C00E29F40 /* MDBrowserTests */,
 				6EE1FD1E185B9F5C00E29F40 /* Frameworks */,
@@ -233,7 +233,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6EE1FD5A185B9F8200E29F40 /* MDBrowser */ = {
+		6EE1FD5A185B9F8200E29F40 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				6E1E6650185CB7DD00849A88 /* MDBrowserAnimator */,
@@ -246,7 +246,7 @@
 				6EE1FD5B185B9F9E00E29F40 /* MDBrowser.h */,
 				6EE1FD5C185B9F9E00E29F40 /* MDBrowser.m */,
 			);
-			name = MDBrowser;
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		6EE1FD70185BA58800E29F40 /* UIImages */ = {
