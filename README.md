@@ -5,7 +5,7 @@ MDBrowser is a very convenient iOS browser that you can present and dismiss with
 forward button so the user can navigate the history ,you can open it for the user for example to like your facebook page,
 follow on google+ or twitter ,or to simply view web pages on the fly without interrupting your app flow.
 
-should be compiled with ARC 
+should be compiled with ARC ,compatible with iPhone and iPad.
 
 
 The MIT License (MIT)
