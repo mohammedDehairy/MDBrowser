@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MyActivityIndicator.h"
+#import "MJPopupBackgroundView.h"
 @protocol BrowserViewDelegate;
 @interface MDBrowser : UIView <UIWebViewDelegate>
 {
@@ -15,6 +16,7 @@
     UIWebView *browser;
     UIView *ContainerView;
     UIView *buttonsView;
+    MJPopupBackgroundView *overlayView;
 }
 @property(nonatomic,weak)id<BrowserViewDelegate> delegate;
 -(void)setButtonsHidden:(BOOL)hidden;
@@ -22,6 +24,7 @@
 -(void)LoadUrl:(NSURL*)url;
 -(void)LoadHtmlString:(NSString*)html;
 -(void)ShowInView:(UIView*)View;
+- (void)ShowInView:(UIView *)View AddOverLayToSuperView:(BOOL)addlyOverlay;
 @end
 @protocol BrowserViewDelegate <NSObject>
 -(void)browserViewUserTapedCloseButton:(MDBrowser*)browser;

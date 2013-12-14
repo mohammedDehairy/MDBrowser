@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E3A453F185C9D9E004620B9 /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A453C185C9D9E004620B9 /* MJPopupBackgroundView.m */; };
 		6EE1FD20185B9F5C00E29F40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE1FD1F185B9F5C00E29F40 /* Foundation.framework */; };
 		6EE1FD22185B9F5C00E29F40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE1FD21185B9F5C00E29F40 /* CoreGraphics.framework */; };
 		6EE1FD24185B9F5C00E29F40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE1FD23185B9F5C00E29F40 /* UIKit.framework */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E3A453B185C9D9E004620B9 /* MJPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPopupBackgroundView.h; sourceTree = "<group>"; };
+		6E3A453C185C9D9E004620B9 /* MJPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPopupBackgroundView.m; sourceTree = "<group>"; };
 		6EE1FD1C185B9F5C00E29F40 /* MDBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE1FD1F185B9F5C00E29F40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6EE1FD21185B9F5C00E29F40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -185,6 +188,8 @@
 		6EE1FD5A185B9F8200E29F40 /* MDBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				6E3A453B185C9D9E004620B9 /* MJPopupBackgroundView.h */,
+				6E3A453C185C9D9E004620B9 /* MJPopupBackgroundView.m */,
 				6EE1FD77185BA63C00E29F40 /* ActivityView.xib */,
 				6EE1FD74185BA62B00E29F40 /* MyActivityIndicator.h */,
 				6EE1FD75185BA62B00E29F40 /* MyActivityIndicator.m */,
@@ -325,6 +330,7 @@
 				6EE1FD30185B9F5C00E29F40 /* MDBrowserAppDelegate.m in Sources */,
 				6EE1FD2C185B9F5C00E29F40 /* main.m in Sources */,
 				6EE1FD76185BA62B00E29F40 /* MyActivityIndicator.m in Sources */,
+				6E3A453F185C9D9E004620B9 /* MJPopupBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +549,7 @@
 				6EE1FD53185B9F5C00E29F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EE1FD54185B9F5C00E29F40 /* Build configuration list for PBXNativeTarget "MDBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +558,7 @@
 				6EE1FD56185B9F5C00E29F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

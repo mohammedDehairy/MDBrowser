@@ -174,6 +174,9 @@
 }
 - (void)removeFromView
 {
+    [overlayView removeFromSuperview];
+    
+    
     if([_delegate respondsToSelector:@selector(browserViewUserTapedCloseButton:)])
     {
         [_delegate browserViewUserTapedCloseButton:self];
@@ -194,6 +197,25 @@
 }
 - (void)ShowInView:(UIView *)View
 {
+    
+    
+    [self ShowInView:View AddOverLayToSuperView:NO];
+
+
+}
+- (void)ShowInView:(UIView *)View AddOverLayToSuperView:(BOOL)addlyOverlay
+{
+    if(addlyOverlay)
+    {
+        if(!overlayView)
+        {
+            overlayView = [[MJPopupBackgroundView alloc] initWithFrame:View.frame];
+            overlayView.backgroundColor = [UIColor clearColor];
+            overlayView.alpha = 1.0f;
+        }
+        [View addSubview:overlayView];
+    }
+    
     
     CATransform3D transform = CATransform3DMakeScale(0.1, 0.1, 0.1);
     
@@ -231,6 +253,7 @@
         
     }];
 }
+
 /*
  // Only override drawRect: if you perform custom drawing.
  // An empty implementation adversely affects performance during animation.
