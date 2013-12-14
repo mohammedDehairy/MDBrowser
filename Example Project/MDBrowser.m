@@ -91,7 +91,7 @@
 {
     if(buttonsHidden)
     {
-        browser.frame = CGRectMake(0, 0, self.bounds.size.width-20, self.bounds.size.height-30);
+        browser.frame = CGRectMake(0, 0, self.bounds.size.width-20, self.bounds.size.height-5);
     }else
     {
         browser.frame = CGRectMake(0,0, self.bounds.size.width-20, self.bounds.size.height-55);

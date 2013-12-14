@@ -31,7 +31,7 @@
     browser.delegate = self;
     [browser ShowInView:self.view AddOverLayToSuperView:YES];
     [browser LoadUrl:[NSURL URLWithString:@"http://www.google.com"]];
-    //[browser setButtonsHidden:switch1.on];
+    [browser setButtonsHidden:switch1.on];
 }
 -(void)switchChanged:(id)sender
 {
