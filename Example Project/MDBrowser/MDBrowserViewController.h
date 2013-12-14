@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MDBrowser.h"
-@interface MDBrowserViewController : UIViewController
+@interface MDBrowserViewController : UIViewController<BrowserViewDelegate>
 {
     MDBrowser *browser;
     IBOutlet UISwitch *switch1;
