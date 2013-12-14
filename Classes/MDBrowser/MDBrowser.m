@@ -174,9 +174,9 @@
 }
 - (void)removeFromView
 {
-    if([_delegate respondsToSelector:@selector(browserViewRemovedUserTapedCloseButton:)])
+    if([_delegate respondsToSelector:@selector(browserViewUserTapedCloseButton:)])
     {
-        [_delegate browserViewRemovedUserTapedCloseButton:self];
+        [_delegate browserViewUserTapedCloseButton:self];
     }
     [self StopAnimatingIndicator];
     
