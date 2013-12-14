@@ -24,9 +24,11 @@
 -(void)ShowInView:(UIView*)View;
 @end
 @protocol BrowserViewDelegate <NSObject>
--(void)browserViewRemovedFromSuperView:(MDBrowser*)browser;
+-(void)browserViewRemovedUserTapedCloseButton:(MDBrowser*)browser;
 -(BOOL)browserShouldStartLoadWithRequest:(NSURLRequest*)request withNavigationType:(UIWebViewNavigationType)navType;
 -(void)browserDidFinishLoading:(MDBrowser*)browser;
 -(void)browserDidStartLoading:(MDBrowser*)browser;
 -(void)browser:(MDBrowser*)browser DidFailToLoadWithError:(NSError*)err;
+-(void)browserUserDidTapForwardBtn:(MDBrowser*)browser canGoForward:(BOOL)canGoForward;
+-(void)browserUserDidTapBackBtn:(MDBrowser*)browser canGoBackward:(BOOL)canGoBackward;
 @end

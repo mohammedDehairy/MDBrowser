@@ -89,6 +89,11 @@
     {
         [self startAnimatingIndicator];
         [browser goForward];
+        
+    }
+    if([_delegate respondsToSelector:@selector(browserUserDidTapForwardBtn:canGoForward:)])
+    {
+        [_delegate browserUserDidTapForwardBtn:self canGoForward:browser.canGoForward];
     }
 }
 - (void)BackAction:(id)sender
@@ -98,8 +103,12 @@
         [self startAnimatingIndicator];
         [browser goBack];
     }
-    
+    if([_delegate respondsToSelector:@selector(browserUserDidTapBackBtn:canGoBackward:)])
+    {
+        [_delegate browserUserDidTapBackBtn:self canGoBackward:browser.canGoBack];
+    }
 }
+
 - (void)LoadUrl:(NSURL *)url
 {
     [browser loadRequest:[[NSURLRequest alloc] initWithURL:url]];
@@ -165,9 +174,9 @@
 }
 - (void)removeFromView
 {
-    if([_delegate respondsToSelector:@selector(browserViewRemovedFromSuperView:)])
+    if([_delegate respondsToSelector:@selector(browserViewRemovedUserTapedCloseButton:)])
     {
-        [_delegate browserViewRemovedFromSuperView:self];
+        [_delegate browserViewRemovedUserTapedCloseButton:self];
     }
     [self StopAnimatingIndicator];
     
