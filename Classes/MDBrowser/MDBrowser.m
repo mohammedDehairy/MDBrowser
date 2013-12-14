@@ -84,7 +84,6 @@
 }
 -(void)interfaceOrientationChanged
 {
-    //browser.frame = CGRectMake(0,0, self.bounds.size.width-20, self.bounds.size.height-80);
     [self setWebViewFrame:buttonsView.hidden];
 }
 -(void)setWebViewFrame:(BOOL)buttonsHidden
@@ -218,7 +217,7 @@
 {
     
     
-    [self ShowInView:View AddOverLayToSuperView:NO];
+    [self ShowInView:View AddOverLayToSuperView:YES];
 
 
 }
