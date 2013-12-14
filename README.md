@@ -27,7 +27,7 @@ Usage :
 
 1. alloc and initialize the MDBrowser with the frame you like .
 
-2. call ShowInView:(UIView*)view and pass it the view you want the browser to be shown in.
+2. call ShowInView:(UIView *)View AddOverLayToSuperView:(BOOL)addlyOverlay withAnimationType:(MDBrowserPresetationAnimationType)animation and pass it the view you want the browser to be shown in, the animation type you want ,And whether you want an overlay on top of the super view or not.
 
 3. call LoadUrl:(NSURL*)url with the url you want,Or call LoadHtmlString:(NSString*)html to load html string.
 
