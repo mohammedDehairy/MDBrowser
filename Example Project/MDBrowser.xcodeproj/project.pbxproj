@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1E6655185CB87C00849A88 /* PopUpBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E6654185CB87C00849A88 /* PopUpBrowserAnimator.m */; };
+		6E1E6659185CB95A00849A88 /* SlideFromBottomBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E6658185CB95A00849A88 /* SlideFromBottomBrowserAnimator.m */; };
+		6E1E665D185CB9F200849A88 /* MDBrowserAnimatorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E665C185CB9F200849A88 /* MDBrowserAnimatorFactory.m */; };
 		6E3A453F185C9D9E004620B9 /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A453C185C9D9E004620B9 /* MJPopupBackgroundView.m */; };
 		6EE1FD20185B9F5C00E29F40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE1FD1F185B9F5C00E29F40 /* Foundation.framework */; };
 		6EE1FD22185B9F5C00E29F40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE1FD21185B9F5C00E29F40 /* CoreGraphics.framework */; };
@@ -48,6 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E1E6651185CB7FA00849A88 /* MDBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBrowserAnimator.h; sourceTree = "<group>"; };
+		6E1E6653185CB87C00849A88 /* PopUpBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpBrowserAnimator.h; sourceTree = "<group>"; };
+		6E1E6654185CB87C00849A88 /* PopUpBrowserAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpBrowserAnimator.m; sourceTree = "<group>"; };
+		6E1E6657185CB95A00849A88 /* SlideFromBottomBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideFromBottomBrowserAnimator.h; sourceTree = "<group>"; };
+		6E1E6658185CB95A00849A88 /* SlideFromBottomBrowserAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideFromBottomBrowserAnimator.m; sourceTree = "<group>"; };
+		6E1E665B185CB9F200849A88 /* MDBrowserAnimatorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBrowserAnimatorFactory.h; sourceTree = "<group>"; };
+		6E1E665C185CB9F200849A88 /* MDBrowserAnimatorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBrowserAnimatorFactory.m; sourceTree = "<group>"; };
 		6E3A453B185C9D9E004620B9 /* MJPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPopupBackgroundView.h; sourceTree = "<group>"; };
 		6E3A453C185C9D9E004620B9 /* MJPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPopupBackgroundView.m; sourceTree = "<group>"; };
 		6EE1FD1C185B9F5C00E29F40 /* MDBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +120,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E1E6650185CB7DD00849A88 /* MDBrowserAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				6E1E665A185CB9DA00849A88 /* MDBrowserAnimatorFactory */,
+				6E1E6656185CB94000849A88 /* SlideFromBottomBrowserAnimator */,
+				6E1E6652185CB85B00849A88 /* PopUpBrowserAnimator */,
+				6E1E6651185CB7FA00849A88 /* MDBrowserAnimator.h */,
+			);
+			name = MDBrowserAnimator;
+			sourceTree = "<group>";
+		};
+		6E1E6652185CB85B00849A88 /* PopUpBrowserAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				6E1E6653185CB87C00849A88 /* PopUpBrowserAnimator.h */,
+				6E1E6654185CB87C00849A88 /* PopUpBrowserAnimator.m */,
+			);
+			name = PopUpBrowserAnimator;
+			sourceTree = "<group>";
+		};
+		6E1E6656185CB94000849A88 /* SlideFromBottomBrowserAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				6E1E6657185CB95A00849A88 /* SlideFromBottomBrowserAnimator.h */,
+				6E1E6658185CB95A00849A88 /* SlideFromBottomBrowserAnimator.m */,
+			);
+			name = SlideFromBottomBrowserAnimator;
+			sourceTree = "<group>";
+		};
+		6E1E665A185CB9DA00849A88 /* MDBrowserAnimatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				6E1E665B185CB9F200849A88 /* MDBrowserAnimatorFactory.h */,
+				6E1E665C185CB9F200849A88 /* MDBrowserAnimatorFactory.m */,
+			);
+			name = MDBrowserAnimatorFactory;
+			sourceTree = "<group>";
+		};
 		6EE1FD13185B9F5C00E29F40 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +236,7 @@
 		6EE1FD5A185B9F8200E29F40 /* MDBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				6E1E6650185CB7DD00849A88 /* MDBrowserAnimator */,
 				6E3A453B185C9D9E004620B9 /* MJPopupBackgroundView.h */,
 				6E3A453C185C9D9E004620B9 /* MJPopupBackgroundView.m */,
 				6EE1FD77185BA63C00E29F40 /* ActivityView.xib */,
@@ -325,9 +374,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E1E6659185CB95A00849A88 /* SlideFromBottomBrowserAnimator.m in Sources */,
+				6E1E665D185CB9F200849A88 /* MDBrowserAnimatorFactory.m in Sources */,
 				6EE1FD39185B9F5C00E29F40 /* MDBrowserViewController.m in Sources */,
 				6EE1FD5D185B9F9E00E29F40 /* MDBrowser.m in Sources */,
 				6EE1FD30185B9F5C00E29F40 /* MDBrowserAppDelegate.m in Sources */,
+				6E1E6655185CB87C00849A88 /* PopUpBrowserAnimator.m in Sources */,
 				6EE1FD2C185B9F5C00E29F40 /* main.m in Sources */,
 				6EE1FD76185BA62B00E29F40 /* MyActivityIndicator.m in Sources */,
 				6E3A453F185C9D9E004620B9 /* MJPopupBackgroundView.m in Sources */,

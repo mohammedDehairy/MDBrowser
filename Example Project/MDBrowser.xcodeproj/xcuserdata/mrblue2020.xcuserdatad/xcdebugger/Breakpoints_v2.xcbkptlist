@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MDBrowser.m"
-            timestampString = "408725920.708609"
+            timestampString = "408726811.154845"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "-LoadUrl:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MDBrowser.m"
-            timestampString = "408725920.708609"
+            timestampString = "408730427.395091"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
-            landmarkName = "-ShowInView:AddOverLayToSuperView:"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "-ShowInView:AddOverLayToSuperView:withAnimationType:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MDBrowser.m"
-            timestampString = "408725920.708609"
+            timestampString = "408726811.154845"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "-interfaceOrientationChanged"
             landmarkType = "5">
          </BreakpointContent>

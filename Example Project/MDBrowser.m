@@ -194,35 +194,31 @@
 {
     [overlayView removeFromSuperview];
     
+    [self StopAnimatingIndicator];
+    
+    
+    [[MDBrowserAnimatorFactory getAnimatoreWithAnimationType:animationType] removeView:self];
     
     if([_delegate respondsToSelector:@selector(browserViewUserTapedCloseButton:)])
     {
         [_delegate browserViewUserTapedCloseButton:self];
     }
-    [self StopAnimatingIndicator];
+    [browser loadHTMLString:@"" baseURL:nil];
     
-    [UIView animateWithDuration:0.2 animations:^(void){
-        
-        
-        self.alpha = 0.0;
-        self.layer.transform = CATransform3DMakeScale(0.1, 0.1, 0.1);
-        
-    } completion:^(BOOL finished){
-        [self removeFromSuperview];
-        self.layer.transform = CATransform3DIdentity;
-        [browser loadHTMLString:@"" baseURL:nil];
-    }];
+    
 }
 - (void)ShowInView:(UIView *)View
 {
     
     
-    [self ShowInView:View AddOverLayToSuperView:YES];
+    [self ShowInView:View AddOverLayToSuperView:YES withAnimationType:MDBrowserPresetationAnimationTypePopUp];
 
+   
 
 }
-- (void)ShowInView:(UIView *)View AddOverLayToSuperView:(BOOL)addlyOverlay
+- (void)ShowInView:(UIView *)View AddOverLayToSuperView:(BOOL)addlyOverlay withAnimationType:(MDBrowserPresetationAnimationType)animation
 {
+    animationType = animation;
     if(addlyOverlay)
     {
         if(!overlayView)
@@ -234,43 +230,9 @@
         }
         [View addSubview:overlayView];
     }
+    [[MDBrowserAnimatorFactory getAnimatoreWithAnimationType:animation] showView:self inView:View];
     
     
-    CATransform3D transform = CATransform3DMakeScale(0.1, 0.1, 0.1);
-    
-    self.layer.transform = transform;
-    
-    
-    [UIView animateWithDuration:0.3 animations:^(void){
-        
-        [View addSubview:self];
-        self.alpha = 1.0;
-        
-        self.layer.transform = CATransform3DMakeScale(1.05, 1.05, 1.05);
-        
-    } completion:^(BOOL finished){
-        [UIView animateWithDuration:0.2 animations:^(void){
-            
-            self.layer.transform = CATransform3DMakeScale(0.95, 0.95, 0.95);
-            
-            
-            
-        } completion:^(BOOL finished){
-            [UIView animateWithDuration:0.2 animations:^(void){
-                
-                self.layer.transform = CATransform3DIdentity;
-                
-                
-                
-            } completion:^(BOOL finished){
-                
-                
-            }];
-            
-        }];
-        
-        
-    }];
 }
 -(void)dealloc
 {
