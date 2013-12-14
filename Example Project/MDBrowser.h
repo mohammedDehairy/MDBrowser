@@ -24,7 +24,7 @@
 -(void)ShowInView:(UIView*)View;
 @end
 @protocol BrowserViewDelegate <NSObject>
--(void)browserViewRemovedUserTapedCloseButton:(MDBrowser*)browser;
+-(void)browserViewUserTapedCloseButton:(MDBrowser*)browser;
 -(BOOL)browserShouldStartLoadWithRequest:(NSURLRequest*)request withNavigationType:(UIWebViewNavigationType)navType;
 -(void)browserDidFinishLoading:(MDBrowser*)browser;
 -(void)browserDidStartLoading:(MDBrowser*)browser;

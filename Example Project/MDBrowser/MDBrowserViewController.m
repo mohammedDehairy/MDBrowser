@@ -50,7 +50,7 @@
     // called when a request is about to be loaded And return whether the request should be loaded or not 
     return YES;
 }
--(void)browserViewRemovedUserTapedCloseButton:(MDBrowser *)browser
+-(void)browserViewUserTapedCloseButton:(MDBrowser *)browser
 {
     // called when user tap the close button
 }
