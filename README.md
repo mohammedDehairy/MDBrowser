@@ -1,7 +1,7 @@
 MDBrowser
 =========
 
-MDBrowser is a very convenient iOS browser that you can present and dismiss with a neat pop up animation ,has a back and
+MDBrowser is a very convenient iOS browser that you can present and dismiss with a neat pop up animation,Also supports slide from bottom animation ,has a back and
 forward button so the user can navigate the history ,you can open it for the user for example to like your facebook page,
 follow on google+ or twitter ,or to simply view web pages on the fly without interrupting your app flow.
 
