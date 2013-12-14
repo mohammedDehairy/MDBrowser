@@ -21,7 +21,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Setup : 
 
-simply add the the classes folder to your project ....thats it
+simply add the the classes folder to your project ,And add QuartzCore.framework to your project
 
 Usage :
 
