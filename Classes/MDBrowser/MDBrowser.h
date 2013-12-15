@@ -29,6 +29,7 @@
 - (void)ShowInView:(UIView *)View AddOverLayToSuperView:(BOOL)addlyOverlay withAnimationType:(MDBrowserPresetationAnimationType)animation;
 @end
 @protocol BrowserViewDelegate <NSObject>
+@optional
 -(void)browserViewUserTapedCloseButton:(MDBrowser*)browser;
 -(BOOL)browserShouldStartLoadWithRequest:(NSURLRequest*)request withNavigationType:(UIWebViewNavigationType)navType;
 -(void)browserDidFinishLoading:(MDBrowser*)browser;
