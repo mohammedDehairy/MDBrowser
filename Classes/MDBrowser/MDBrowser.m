@@ -29,9 +29,10 @@
         ContainerView.layer.cornerRadius = 10;
         ContainerView.clipsToBounds = YES;
         
-        UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [closeBtn setImage:[UIImage imageNamed:@"close.png"] forState:UIControlStateNormal];
-        closeBtn.frame = CGRectMake(0, -5, 35, 35);
+        closeBtn.frame = CGRectMake(0, 0, 20, 20);
+        closeBtn.autoresizingMask = UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin;
         [closeBtn addTarget:self action:@selector(CancelLoginAction:) forControlEvents:UIControlEventTouchUpInside];
         
         [self addSubview:closeBtn];
@@ -85,15 +86,26 @@
 -(void)interfaceOrientationChanged
 {
     [self setWebViewFrame:buttonsView.hidden];
+    [self setCloseBtnFrame];
 }
 -(void)setWebViewFrame:(BOOL)buttonsHidden
 {
     if(buttonsHidden)
     {
-        browser.frame = CGRectMake(0, 0, self.bounds.size.width-20, self.bounds.size.height-5);
+        browser.frame = CGRectMake(0, 0, ContainerView.bounds.size.width, ContainerView.bounds.size.height-5);
     }else
     {
-        browser.frame = CGRectMake(0,0, self.bounds.size.width-20, self.bounds.size.height-55);
+        browser.frame = CGRectMake(0, 0, ContainerView.bounds.size.width, ContainerView.bounds.size.height-50);
+    }
+}
+-(void)setCloseBtnFrame
+{
+    if(UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation))
+    {
+        closeBtn.frame = CGRectMake(0, 0, 20, 20);
+    }else
+    {
+        closeBtn.frame = CGRectMake(10, 0, 20, 20);
     }
 }
 -(void)setButtonsHidden:(BOOL)hidden
@@ -192,12 +204,25 @@
 }
 - (void)removeFromView
 {
-    [overlayView removeFromSuperview];
+    
     
     [self StopAnimatingIndicator];
     
     
-    [[MDBrowserAnimatorFactory getAnimatoreWithAnimationType:animationType] removeView:self];
+    [[MDBrowserAnimatorFactory getAnimatoreWithAnimationType:animationType] removeView:self withCompletionBlock:^(BOOL finished){
+    
+        [UIView animateWithDuration:0.2 animations:^(void){
+        
+            overlayView.alpha = 0.0;
+        
+        } completion:^(BOOL finished){
+        
+            [overlayView removeFromSuperview];
+        
+        }];
+        
+    
+    }];
     
     if([_delegate respondsToSelector:@selector(browserViewUserTapedCloseButton:)])
     {
@@ -225,10 +250,20 @@
         {
             overlayView = [[MJPopupBackgroundView alloc] initWithFrame:View.bounds];
             overlayView.backgroundColor = [UIColor clearColor];
-            overlayView.alpha = 1.0f;
+            overlayView.alpha = 0.0f;
             overlayView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+            
+            
         }
         [View addSubview:overlayView];
+        [UIView animateWithDuration:0.2 animations:^(void){
+            
+            overlayView.alpha = 1.0;
+            
+        } completion:^(BOOL finished){
+            
+            
+        }];
     }
     [[MDBrowserAnimatorFactory getAnimatoreWithAnimationType:animation] showView:self inView:View];
     

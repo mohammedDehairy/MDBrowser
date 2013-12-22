@@ -25,7 +25,7 @@
         
     }];
 }
--(void)removeView:(UIView *)removedView 
+-(void)removeView:(UIView *)removedView withCompletionBlock:(void (^)(BOOL finished))completionBlock
 {
     [UIView animateWithDuration:0.3 animations:^(void){
         
@@ -37,6 +37,7 @@
         
         
         [removedView removeFromSuperview];
+        completionBlock(YES);
     }];
 }
 @end

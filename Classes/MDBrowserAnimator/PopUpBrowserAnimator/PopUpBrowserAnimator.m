@@ -48,7 +48,7 @@
     }];
 
 }
--(void)removeView:(UIView *)removedView
+-(void)removeView:(UIView *)removedView withCompletionBlock:(void (^)(BOOL finished))completionBlock
 {
     [UIView animateWithDuration:0.2 animations:^(void){
         
@@ -59,6 +59,7 @@
     } completion:^(BOOL finished){
         [removedView removeFromSuperview];
         removedView.layer.transform = CATransform3DIdentity;
+        completionBlock(YES);
         
     }];
 }

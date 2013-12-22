@@ -10,5 +10,5 @@
 
 @protocol MDBrowserAnimator <NSObject>
 -(void)showView:(UIView*)showedView inView:(UIView*)superView;
--(void)removeView:(UIView*)removedView;
+-(void)removeView:(UIView*)removedView withCompletionBlock:(void (^)(BOOL finished))completionBlock;
 @end

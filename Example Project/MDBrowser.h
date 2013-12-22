@@ -19,6 +19,7 @@
     UIView *buttonsView;
     MJPopupBackgroundView *overlayView;
     MDBrowserPresetationAnimationType animationType;
+    UIButton *closeBtn;
 }
 @property(nonatomic,weak)id<BrowserViewDelegate> delegate;
 -(void)setButtonsHidden:(BOOL)hidden;
