@@ -32,7 +32,7 @@
         closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [closeBtn setImage:[UIImage imageNamed:@"close.png"] forState:UIControlStateNormal];
         closeBtn.frame = CGRectMake(0, 0, 20, 20);
-        closeBtn.autoresizingMask = UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin;
+        closeBtn.autoresizingMask = UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         [closeBtn addTarget:self action:@selector(CancelLoginAction:) forControlEvents:UIControlEventTouchUpInside];
         
         [self addSubview:closeBtn];

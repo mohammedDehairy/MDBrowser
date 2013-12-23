@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E059CF9186854DC0013B77B /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E059CF8186854DC0013B77B /* close@2x.png */; };
 		6E1E6655185CB87C00849A88 /* PopUpBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E6654185CB87C00849A88 /* PopUpBrowserAnimator.m */; };
 		6E1E6659185CB95A00849A88 /* SlideFromBottomBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E6658185CB95A00849A88 /* SlideFromBottomBrowserAnimator.m */; };
 		6E1E665D185CB9F200849A88 /* MDBrowserAnimatorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E665C185CB9F200849A88 /* MDBrowserAnimatorFactory.m */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E059CF8186854DC0013B77B /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
 		6E1E6651185CB7FA00849A88 /* MDBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBrowserAnimator.h; sourceTree = "<group>"; };
 		6E1E6653185CB87C00849A88 /* PopUpBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpBrowserAnimator.h; sourceTree = "<group>"; };
 		6E1E6654185CB87C00849A88 /* PopUpBrowserAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpBrowserAnimator.m; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 		6EE1FD70185BA58800E29F40 /* UIImages */ = {
 			isa = PBXGroup;
 			children = (
+				6E059CF8186854DC0013B77B /* close@2x.png */,
 				6EE1FD6E185BA23C00E29F40 /* close.png */,
 				6EE1FD66185BA1F700E29F40 /* back_active@2x.png */,
 				6EE1FD67185BA1F700E29F40 /* back@2x.png */,
@@ -342,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E059CF9186854DC0013B77B /* close@2x.png in Resources */,
 				6EE1FD6A185BA1F700E29F40 /* back_active@2x.png in Resources */,
 				6EE1FD36185B9F5C00E29F40 /* Main_iPad.storyboard in Resources */,
 				6EE1FD3B185B9F5C00E29F40 /* Images.xcassets in Resources */,
