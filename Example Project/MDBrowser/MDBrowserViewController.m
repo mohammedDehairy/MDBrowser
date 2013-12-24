@@ -27,11 +27,11 @@
 }
 -(void)showBrowserAction:(id)sender
 {
-    browser = [[MDBrowser alloc] initWithFrame:CGRectMake(0, 25, self.view.bounds.size.width-100, self.view.bounds.size.height-100)];
+    browser = [[MDBrowser alloc] initWithFrame:CGRectMake(0, 25, self.view.bounds.size.width, self.view.bounds.size.height-100)];
     browser.delegate = self;
-    [browser ShowInView:self.view AddOverLayToSuperView:YES withAnimationType:MDBrowserPresetationAnimationTypeSlideFromBottom];
+    [browser ShowInView:self.view AddOverLayToSuperView:YES withAnimationType:MDBrowserPresetationAnimationTypePopUp];
     [browser LoadUrl:[NSURL URLWithString:@"http://www.google.com"]];
-    [browser setButtonsHidden:YES];
+    [browser setButtonsHidden:switch1.on];
 }
 -(void)switchChanged:(id)sender
 {
